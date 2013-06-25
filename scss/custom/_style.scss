@@ -1,0 +1,47 @@
+// Write your own style below
+
+// colors
+$red: #b20000;
+$w: #fff;
+$b: #000;
+
+// typo
+$arial: Arial, sans-serif;
+$serif: serif;
+
+// width
+$w1200: 1200px;
+$w1140: 1140px;
+$w960: 960px;
+$w640: 640px;
+$w320: 320px;
+
+// link
+a {
+	color: $w;
+}
+
+// do whatever you want to below
+body {
+	font-family: $arial;
+	font-size: 1em;
+  line-height: 1.4;
+  background: $w;
+}
+
+.container {
+	@include outer-container;
+	//set width of your choice
+	max-width: $w1200;
+}
+
+// Those are for demonstration, you can remove it
+.span-3,.span-4,.span-5,.span-6,.span-7,.span-8,.span-9,.span-10,.span-11,.span-12 {
+	margin-top: 10px;
+	padding: 20px;
+	background: $red;
+	color: $w;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
