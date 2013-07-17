@@ -1,4 +1,4 @@
-# Enoch
+# PHP Starter Kit
 Those are what I use often to build my projects and clients without needing CMS. What's in the package are basic responsive website template with PHP, Bourbon and Neat.
 
 # Docs
@@ -20,4 +20,4 @@ If you're already familiar with compilers like [CodeKit](http://incident57.com/c
  * [Mou](http://mouapp.com) - the missing Markdown editor for web developers
  
 ### License
-Enoch is released under a [Creative Commons Attribution-Share Alike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/). This means you can copy, distribute, transmit and adapt the work to your own personal and commercial projects.
+PHP Starter Kit is released under a [Creative Commons Attribution-Share Alike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/). This means you can copy, distribute, transmit and adapt the work to your own personal and commercial projects.
