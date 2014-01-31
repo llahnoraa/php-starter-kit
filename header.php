@@ -15,8 +15,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-<link rel="shortcut icon" href="/img/favicon.png">
-<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="shortcut icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="stylesheet" href="css/base.css">
 
 <script src="http://modernizr.com/downloads/modernizr-latest.js"></script>
@@ -33,6 +33,8 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 </head>
 <body>
 
-<div class="container">
+<header class="container">
+
 	<div class="span-12">span-12</div>
-</div><!--/.container-->
+
+</header><!--/.container-->

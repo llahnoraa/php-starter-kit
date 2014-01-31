@@ -6,6 +6,7 @@ $w: #fff;
 $b: #000;
 
 // typo
+$helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $arial: Arial, sans-serif;
 $serif: serif;
 
@@ -23,9 +24,10 @@ a {
 
 // do whatever you want to below
 body {
-	font-family: $arial;
+	font-family: $helvetica;
 	font-size: 1em;
   line-height: 1.4;
+  font-weight: 300;
   background: $w;
 }
 
@@ -38,10 +40,13 @@ body {
 // Those are for demonstration, you can remove it
 .span-3,.span-4,.span-5,.span-6,.span-7,.span-8,.span-9,.span-10,.span-11,.span-12 {
 	margin-top: 10px;
-	padding: 20px;
+	padding: 10px;
 	background: $red;
 	color: $w;
 	text-align: center;
-	font-weight: bold;
 	text-transform: uppercase;
+	&:hover {
+		background: darken($red,20%);
+		cursor: defaut;
+	}
 }
