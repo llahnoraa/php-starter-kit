@@ -1,52 +1,36 @@
-// Write your own style below
+body {
+	font: 16px/1.4 $body-copy;
+	background: $w;
+	color: $charcoal;
+	@include smooth-text;
+}
 
-// colors
-$red: #b20000;
-$w: #fff;
-$b: #000;
-
-// typo
-$helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-$arial: Arial, sans-serif;
-$serif: serif;
-
-// width
-$w1200: 1200px;
-$w1140: 1140px;
-$w960: 960px;
-$w640: 640px;
-$w320: 320px;
+h1,h2,h3,h4,h5,h6 {
+	font-family: $serif;
+}
 
 // link
 a {
-	color: $w;
-}
-
-// do whatever you want to below
-body {
-	font-family: $helvetica;
-	font-size: 1em;
-  line-height: 1.4;
-  font-weight: 300;
-  background: $w;
+	color: $pink;
 }
 
 .container {
 	@include outer-container;
 	//set width of your choice
-	max-width: $w1200;
+	max-width: $w1150;
 }
 
 // Those are for demonstration, you can remove it
 .span-3,.span-4,.span-5,.span-6,.span-7,.span-8,.span-9,.span-10,.span-11,.span-12 {
 	margin-top: 10px;
 	padding: 10px;
-	background: $red;
+	background: $pink;
 	color: $w;
 	text-align: center;
 	text-transform: uppercase;
+	a {color: $w;}
 	&:hover {
-		background: darken($red,20%);
+		background: $orange;
 		cursor: defaut;
 	}
 }

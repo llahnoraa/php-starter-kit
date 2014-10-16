@@ -1,0 +1,52 @@
+// colors
+$w: #fff;
+$b: #000;
+$charcoal: #444;
+$pink: #ff2965;
+$orange: #ff5b3d;
+
+// typo
+$helvetica: Helvetica, sans-serif;
+$serif: serif;
+$fa: 'Font Awesome';
+
+$body-copy: $helvetica;
+$headlines: $serif;
+
+// width
+$w1150: 1150px;
+$w1000: 1000px;
+$w900: 	900px;
+$tablet:		768px;
+$mobile: 	480px;
+
+// for mobile/tablet
+body, p, li, small, blockquote {
+	@include max-width($tablet) {
+		font-weight: 300;
+	}
+}
+
+// no margin and padding - use @include zero; and @include zero-list;
+@mixin zero {
+	margin: 0;
+	padding: 0
+}
+
+@mixin zero-list {
+	@extend .zero;
+	list-style: none;
+}
+
+// smooth - use @include smooth-text;
+@mixin smooth-text {
+	-webkit-font-smoothing: antialiased !important;
+	-moz-font-smoothing: antialiased !important;
+	font-smoothing: antialiased !important;
+	text-rendering: optimizeLegibility;
+}
+
+// highlight
+::selection { background:$pink; color:$w; text-shadow:none }
+::-moz-selection { background:$pink; color:$w; text-shadow:none }
+::-webkit-selection { background:$pink; color:$w; text-shadow:none }

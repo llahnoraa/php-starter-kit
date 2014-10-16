@@ -1,4 +1,4 @@
-<?php  $title = ''; include 'header.php'; ?>
+<?php  $title = 'Created by Aaron Hall'; include 'header.php'; ?>
 
 <div class="container">
 
