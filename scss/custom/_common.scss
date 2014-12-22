@@ -14,9 +14,10 @@ $body-copy: $helvetica;
 $headlines: $serif;
 
 // width
-$w1150: 1150px;
-$w1000: 1000px;
+$w1150: 	1150px;
+$w1000: 	1000px;
 $w900: 	900px;
+$desktop:	$w1000;
 $tablet:		768px;
 $mobile: 	480px;
 
@@ -44,6 +45,54 @@ body, p, li, small, blockquote {
 	-moz-font-smoothing: antialiased !important;
 	font-smoothing: antialiased !important;
 	text-rendering: optimizeLegibility;
+}
+
+// Display content in mobile only (using block class)
+.mobile {
+  display: none !important;
+  @include max-width($mobile) {
+    display: block !important;
+  }
+}
+
+// Display content in tablet and below only (using block class)
+.tablet {
+  display: none !important;
+  @include max-width($tablet) {
+    display: block !important;
+  }
+}
+
+// Display content in desktop and above only (using block class)
+.desktop {
+  display: block !important;
+  @include max-width($desktop) {
+    display: none !important;
+  }
+}
+
+// Display content in desktop and above only (using inline-block class)
+.mobile-inline {
+  display: none !important;
+  @include max-width(480px) {
+    display: inline-block !important;
+  }
+}
+
+// Display content in tablet and above only (using inline-block class)
+.tablet-inline {
+  display: none !important;
+  @include max-width(768px) {
+    display: inline-block !important;
+  }
+}
+
+// Display content in mobile and above only (using inline-block class)
+.desktop-inline {
+  display: inline-block !important;
+  @include max-width(768px) {
+    display: none !important;
+  }
 }
 
 // highlight
