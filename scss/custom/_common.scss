@@ -10,8 +10,7 @@ $helvetica: Helvetica, sans-serif;
 $serif: serif;
 $fa: 'FontAwesome';
 
-$body-copy: $helvetica;
-$headlines: $serif;
+// fontface example
 
 // width
 $w1150: 	1150px;
@@ -23,28 +22,28 @@ $mobile: 	480px;
 
 // for mobile/tablet
 body, p, li, small, blockquote {
-	@include max-width($tablet) {
-		font-weight: 300;
-	}
+  @include max-width($tablet) {
+    font-weight: 300;
+  }
 }
 
 // no margin and padding - use @include zero; and @include zero-list;
 @mixin zero {
-	margin: 0;
-	padding: 0
+  margin: 0;
+  padding: 0
 }
 
 @mixin zero-list {
-	@extend .zero;
-	list-style: none;
+  @extend .zero;
+  list-style: none;
 }
 
 // smooth - use @include smooth-text;
 @mixin smooth-text {
-	-webkit-font-smoothing: antialiased !important;
-	-moz-font-smoothing: antialiased !important;
-	font-smoothing: antialiased !important;
-	text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility;
 }
 
 // Display content in mobile only (using block class)

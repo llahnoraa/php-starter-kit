@@ -1,18 +1,4 @@
-body {
-	font: 16px/1.4 $body-copy;
-	background: $w;
-	color: $charcoal;
-	@include smooth-text;
-}
 
-h1,h2,h3,h4,h5,h6 {
-	font-family: $serif;
-}
-
-// link
-a {
-	color: $pink;
-}
 
 .container {
 	@include outer-container;
