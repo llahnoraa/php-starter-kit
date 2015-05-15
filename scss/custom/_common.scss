@@ -10,7 +10,9 @@ $helvetica: Helvetica, sans-serif;
 $serif: serif;
 $fa: 'FontAwesome';
 
-// fontface example
+// fontface example - https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
+@include font-face('Samplino', fonts/Samplino);
+@include font-face('Samplina Neue', fonts/SamplinaNeue, bold, italic);
 
 // width
 $w1150: 	1150px;
