@@ -1,0 +1,17 @@
+{
+  "name": "php_starter_kit",
+  "version": "1.0.0",
+  "description": "Starter Kit for PHP projects that do not require a CMS",
+  "author": "Aaron Hall",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-watch": "~0.5.2",
+    "grunt-contrib-sass": "~0.4.1",
+    "grunt-contrib-imagemin": "~0.1.4",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt-notify": "~0.2.16",
+    "time-grunt": "^1.1.0"
+  }
+}
