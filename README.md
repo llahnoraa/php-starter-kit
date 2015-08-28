@@ -9,7 +9,14 @@ Those are what I use often to build my projects and clients without needing CMS.
  * `apple-touch-icon.psd` HTML5 favicon photoshop template
  
 # How to use it
-If you're already familiar with compilers like [CodeKit](http://incident57.com/codekit/) or [Koala](http://koala-app.com/) then you're on the right track. If not, check them out. To compile, select the `base.scss` file and set the output path to `css/base.css`. I used [MAMP Pro](http://www.mamp.info/en/mamp-pro/) that allowed me to test and modify PHP files locally. I used `apple-touch-icon.psd` to update the favicon only once. Pretty nifty, eh?
+If you're already familiar with compilers like [CodeKit](http://incident57.com/codekit/) or [Koala](http://koala-app.com/) then you're on the right track. If not, check them out. I used [MAMP Pro](http://www.mamp.info/en/mamp-pro/) that allowed me to test and modify PHP files locally. I used `apple-touch-icon.psd` to update the favicon only once. Pretty nifty, eh?
+
+## CodeKit / Koala
+To compile, select the `base.scss` file and set the output path to `css/base.css`.
+
+## Grunt
+Grunt is a Javascript Task Manager. To install grunt, [follow their instructions](http://gruntjs.com/getting-started).
+In the root of this directory, run `npm install` for the first time. After the initial install completes, you can run `grunt watch` from the root to track file changes.
 
 ### Credits
  * [Bourbon](http://bourbon.io) - a simple and lightweight mixin library for Sass
